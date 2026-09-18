@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.khoivu</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>demo-spring-boot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
+	<name>demo-spring-boot</name>
 	<description/>
 	<url/>
 	<licenses>
