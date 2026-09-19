@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.RestController;
 import com.khoivu.demo.common.Coach;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 
 
@@ -14,7 +13,7 @@ public class DemoController {
   private Coach coach;
 
   @Autowired 
-  public DemoController(@Qualifier("trackCoach") Coach coach) {
+  public DemoController(@Qualifier("quatic") Coach coach) {
     System.out.println(">> DemoController: inside constructor");
     this.coach = coach;
   }
