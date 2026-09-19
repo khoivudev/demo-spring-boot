@@ -13,24 +13,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class DemoController {
   private Coach coach;
 
-  private Coach anotherCoach;
-
   @Autowired 
-  public DemoController(@Qualifier("trackCoach") Coach coach, @Qualifier("trackCoach") Coach anotherCoach) {
+  public DemoController(@Qualifier("trackCoach") Coach coach) {
     System.out.println(">> DemoController: inside constructor");
     this.coach = coach;
-    this.anotherCoach = anotherCoach;
   }
 
 
   @GetMapping("/dailyworkout")
   public String getDailyWorkout() {
       return coach.getDailyWorkout();
-  }
-  
-  @GetMapping("/check")
-  public String check() {
-      return "Compare the two coach instances: " + (coach == anotherCoach);
   }
   
 }
