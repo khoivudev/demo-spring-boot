@@ -5,5 +5,5 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import com.khoivu.demo.entity.Employee;
 
-@RepositoryRestResource(path="members")
+@RepositoryRestResource(path="employees")
 public interface EmployeeRepository extends JpaRepository<Employee, Integer> {}
